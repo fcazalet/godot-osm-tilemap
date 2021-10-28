@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "TileMap",
+"class": "OSMTileMap",
+"language": "GDScript",
+"path": "res://OsmTileMap.gd"
+}, {
+"base": "HTTPRequest",
+"class": "OsmTileMapHttpRequest",
+"language": "GDScript",
+"path": "res://OsmTileMapHttpRequest.gd"
+} ]
+_global_script_class_icons={
+"OSMTileMap": "",
+"OsmTileMapHttpRequest": ""
+}
+
+[application]
+
+config/name="Godot-OSM-TileMap"
+run/main_scene="res://OsmTileMap.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

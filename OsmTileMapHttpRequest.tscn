@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://OsmTileMapHttpRequest.gd" type="Script" id=1]
+
+[node name="OsmTileMapHttpRequest" type="HTTPRequest"]
+use_threads = true
+script = ExtResource( 1 )
