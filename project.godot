@@ -30,6 +30,10 @@ config/name="Godot-OSM-TileMap"
 run/main_scene="res://OsmTileMap.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/dpi/allow_hidpi=true
+
 [physics]
 
 common/enable_pause_aware_picking=true
